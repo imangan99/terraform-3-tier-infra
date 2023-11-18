@@ -17,3 +17,8 @@ variable "vpc_cidr" {
   type = string
   description = "cidr range"
 }
+
+variable "vpc_id" {
+    type = string
+  description = "cidvp range"
+}

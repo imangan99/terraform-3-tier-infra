@@ -12,7 +12,7 @@ resource "aws_db_subnet_group" "db_subnet_group" {
 resource "aws_security_group" "rds_sg" {
   name        = "${var.tags["project"]}-${var.tags["application"]}-${var.tags["environment"]}-rds_sg"
   description = "Allow db traffic"
-  vpc_id      = var_vpc_id
+  vpc_id      = var.vpc_id
 
   ingress {
     description      = "DB port"
